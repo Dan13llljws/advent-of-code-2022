@@ -7,10 +7,10 @@ int main(){
     getline(ifs, s);
     for (int i = 0; i < (int)s.size(); i++){
         set<char> st;
-        for (int j = i; j < min((int)s.size(), i + 4); j++)
+        for (int j = i; j < min((int)s.size(), i + 14); j++)
             st.insert(s[j]);
-        if (st.size() == 4){
-            cout << i + 4 << '\n';
+        if (st.size() == 14){
+            cout << i + 14 << '\n';
             return 0;
         }
     }
